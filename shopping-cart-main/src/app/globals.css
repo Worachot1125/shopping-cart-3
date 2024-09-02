@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #eaf2f0; /* Light green background */
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f8f8f8; /* Very light gray background for a modern feel */
   color: #333;
   margin: 0;
   padding: 20px;
@@ -8,9 +8,17 @@ body {
 
 h1 {
   text-align: center;
-  color: #2e7d32; /* Dark green for the heading */
-  font-weight: bold;
+  color: #333; /* Dark gray for the heading for a clean look */
+  font-weight: 600;
   margin-bottom: 20px;
+  font-size: 2rem; /* Slightly larger font size */
+}
+
+h2 {
+  text-align: center;
+  color: #555; /* Medium gray for sub-headings */
+  font-weight: 400;
+  font-size: 1.5rem; /* Slightly larger font size for emphasis */
 }
 
 .container {
@@ -24,11 +32,11 @@ h1 {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  border: 1px solid #c8e6c9; /* Light green border */
-  padding: 10px;
+  border: 1px solid #e1e1e1; /* Light gray border for subtle separation */
+  padding: 15px;
   margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.1); /* Light green shadow */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   flex-wrap: wrap;
 }
 
@@ -36,8 +44,7 @@ h1 {
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
-  flex-basis: 20%;
-  max-width: 150px; /* Ensure image does not grow too large */
+  flex-basis: 20%; /* Increased space for images */
 }
 
 .item-info {
@@ -45,24 +52,25 @@ h1 {
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
-  flex-basis: 40%;
+  flex-basis: 50%; /* Increased space for item info */
 }
 
 .item-name {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600; /* Slightly bolder font for item names */
   margin-bottom: 5px;
 }
 
 .item-description {
-  color: #388e3c; /* Darker green for the description */
+  color: #666; /* Lighter gray for description */
   font-size: 14px;
 }
 
 .item-price {
-  color: #43a047; /* Green for price */
+  color: #333; /* Darker gray for price */
   font-size: 16px;
-  margin-top: 5px;
+  text-align: left;
+  flex-basis: 20%;
 }
 
 .item-controls {
@@ -73,43 +81,47 @@ h1 {
 }
 
 .item-total-price {
-  color: #616161; /* Gray for total price */
-  font-size: 20px;
+  color: #333; /* Dark gray for total price */
+  font-size: 18px;
   text-align: right;
   flex-basis: 20%;
 }
 
 button {
-  background-color: #388e3c; /* Dark green button */
+  background-color: #007aff; /* Apple blue for buttons */
   color: white;
   border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
+  padding: 10px 16px;
+  border-radius: 5px;
   cursor: pointer;
   margin: 0 5px;
+  font-size: 16px;
 }
 
 button:disabled {
-  background-color: #a5d6a7; /* Light green when disabled */
+  background-color: #d1d1d6; /* Light gray when disabled */
   cursor: not-allowed;
 }
 
 .total-container {
   position: fixed;
-  top: 20px; /* Position 20px from the top of the viewport */
-  right: 20px; /* Position 20px from the right of the viewport */
+  top: 20px;
+  right: 20px;
   background-color: #fff;
   text-align: center;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.1); /* Light green shadow */
-  z-index: 1000; /* Ensure it stays on top of other content */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .total {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
   font-size: 18px;
-  font-weight: bold;
-  color: #2e7d32; /* Dark green for total */
+  font-weight: 600;
+  color: #333;
   margin: 0;
 }
 
@@ -122,8 +134,6 @@ button:disabled {
 
   .item-cart img {
     margin-bottom: 10px;
-    width: 100%; /* Ensure the image takes the full width */
-    max-width: 100%; /* Ensure the image does not exceed container width */
   }
 
   .item-info, .item-price, .item-controls, .item-total-price {
@@ -146,7 +156,7 @@ button:disabled {
 
   .total-container {
     font-size: 18px;
-    font-weight: bold;
-    color: #2e7d32; /* Dark green for total */
+    font-weight: 600;
+    color: #333;
   }
 }
