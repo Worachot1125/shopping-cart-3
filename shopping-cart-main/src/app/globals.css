@@ -1,6 +1,6 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #f8f8f8; /* Very light gray background for a modern feel */
+  background-color: #f8f8f8; /* Very light gray background */
   color: #333;
   margin: 0;
   padding: 20px;
@@ -8,17 +8,17 @@ body {
 
 h1 {
   text-align: center;
-  color: #333; /* Dark gray for the heading for a clean look */
+  color: #333; /* Dark gray for the heading */
   font-weight: 600;
   margin-bottom: 20px;
-  font-size: 2rem; /* Slightly larger font size */
+  font-size: 2rem; /* Larger font size */
 }
 
 h2 {
   text-align: center;
   color: #555; /* Medium gray for sub-headings */
   font-weight: 400;
-  font-size: 1.5rem; /* Slightly larger font size for emphasis */
+  font-size: 1.5rem; /* Larger font size */
 }
 
 .container {
@@ -32,11 +32,11 @@ h2 {
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
-  border: 1px solid #e1e1e1; /* Light gray border for subtle separation */
+  border: 1px solid #e1e1e1; /* Light gray border */
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
   flex-wrap: wrap;
 }
 
@@ -57,7 +57,7 @@ h2 {
 
 .item-name {
   font-size: 18px;
-  font-weight: 600; /* Slightly bolder font for item names */
+  font-weight: 600; /* Bold font for item names */
   margin-bottom: 5px;
 }
 
@@ -67,7 +67,7 @@ h2 {
 }
 
 .item-price {
-  color: #333; /* Darker gray for price */
+  color: #333; /* Dark gray for price */
   font-size: 16px;
   text-align: left;
   flex-basis: 20%;
@@ -111,7 +111,7 @@ button:disabled {
   text-align: center;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
   z-index: 1000;
 }
 
